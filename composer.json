@@ -10,7 +10,7 @@
 	},
     "require": {
 		"slim/views": "0.1.*",
-        "philo/laravel-blade": "dev-master",
+        "philo/laravel-blade": "dev-master"
     },
     "autoload": {
         "psr-0" : {
