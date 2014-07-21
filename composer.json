@@ -27,7 +27,7 @@
    },
    "autoload":{
       "psr-4":{
-         "SlimPages\\Views\\":"src"
+         "Slim\\Views\\":"src"
       }
    }
 }
