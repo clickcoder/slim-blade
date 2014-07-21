@@ -1,0 +1,20 @@
+{
+    "name": "clickcoder/slim-blade",
+    "description": "Blade is a simple, yet powerful templating engine provided for the Slim Framework",
+	"version": "dev-master",
+	"keywords": ["slim-blade", "laravel", "blade", "slim", "slimphp"],
+	"source": {
+		"url": "git://github.com/clickcoder/slim-blade.git",
+		"type": "git",
+		"reference": "master"
+	},
+    "require": {
+		"slim/views": "0.1.*",
+        "philo/laravel-blade": "dev-master",
+    },
+    "autoload": {
+        "psr-0" : {
+            "Slim\\Views" : "src"
+        }
+    }
+}
