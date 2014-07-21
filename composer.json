@@ -22,7 +22,8 @@
       "reference":"master"
    },
    "require":{
-      "slim/views":"0.1.*"
+      "slim/views":"0.1.*",
+      "philo/laravel-blade":"1.0"
    },
    "autoload":{
       "psr-0":{
