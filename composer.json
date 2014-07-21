@@ -1,27 +1,33 @@
 {
-    "name": "clickcoder/slim-blade",
-    "description": "Blade is a simple, yet powerful templating engine provided for the Slim Framework",
-	"keywords": ["slim-blade", "laravel", "blade", "slim", "slimphp"],
-    "homepage": "http://github.com/clickcoder/slim-blade",
-	"license": "MIT",
-    "authors": [
-        {
-            "name": "clickcoder",
-            "email": "kevin@kevindarren.com"
-        }
-    ],
-	"source": {
-		"url": "git://github.com/clickcoder/slim-blade.git",
-		"type": "git",
-		"reference": "master"
-	},
-    "require": {
-		"slim/views": "0.1.*",
-		"philo/laravel-blade": "1.0"
-    },
-    "autoload": {
-        "psr-0" : {
-            "Slim\\Views" : "src"
-        }
-    }
+   "name":"clickcoder/slim-blade",
+   "description":"Blade is a simple, yet powerful templating engine provided for the Slim Framework",
+   "keywords":[
+      "slim-blade",
+      "laravel",
+      "blade",
+      "slim",
+      "slimphp"
+   ],
+   "homepage":"http://github.com/clickcoder/slim-blade",
+   "license":"MIT",
+   "authors":[
+      {
+         "name":"clickcoder",
+         "email":"kevin@kevindarren.com"
+      }
+   ],
+   "source":{
+      "url":"git://github.com/clickcoder/slim-blade.git",
+      "type":"git",
+      "reference":"master"
+   },
+   "require":{
+      "slim/views":"0.1.*",
+      "philo/laravel-blade":"1.0"
+   },
+   "autoload":{
+      "psr-0":{
+         "Slim\\Views":"src"
+      }
+   }
 }
