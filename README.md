@@ -7,12 +7,12 @@ Blade is the default template engine of Laravel. The main advantage of Blade is 
 
 #### using [Composer](http://getcomposer.org/)
 
-Create a composer.json file in your project root:
+The package can be installed via Composer by requiring the "clickcoder/slim-blade": "dev-master" package in your project's composer.json.
     
 ```json
 {
     "require": {
-        "clickcoder/slim-blade": "0.1.*"
+        "clickcoder/slim-blade": "dev-master"
     }
 }
 ```
@@ -45,6 +45,8 @@ $view->parserOptions = array(
     'cache' => dirname(__FILE__) . '/cache'
 );
 ```
+
+You can use all blade features as described in the Laravel 4 documentation: http://laravel.com/docs/templates#blade-templating
 
 ## Authors
 
