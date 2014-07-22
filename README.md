@@ -32,7 +32,8 @@ $ php composer.phar install
 require 'vendor/autoload.php';
 
 $app = new \Slim\Slim(array(
-    'view' => new \Slim\Views\Blade()
+    'view' => new \Slim\Views\Blade(),
+	'templates.path' => './templates',
 ));
 ```
 
@@ -47,6 +48,47 @@ $view->parserOptions = array(
 ```
 
 You can use all blade features as described in the Laravel 4 documentation: http://laravel.com/docs/templates#blade-templating
+
+### Example
+
+Create the following index.php file
+
+```php
+<?php
+require 'vendor/autoload.php';
+
+$app = new \Slim\Slim(array(
+    'view' => new \Slim\Views\Blade(),
+	'templates.path' => './templates',
+));
+
+$view = $app->view();
+$view->parserOptions = array(
+    'debug' => true,
+    'cache' => dirname(__FILE__) . '/cache'
+);
+
+$app->get('/hello/:name', function ($name) use ($app) {
+	$app->render('master', array(
+		'variable' =>  "Hello, $name"
+	));
+});
+
+$app->run();
+```
+
+Create a `templates` folder and add this inside
+
+```php
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+		{{ $variable }}
+    </body>
+</html>
+```
+
+visit /index.php/hello/world
 
 ## Authors
 
