@@ -54,13 +54,12 @@ class Blade extends \Slim\View
     public function getInstance()
     {
         if (!$this->parserInstance) {
-            $views = base_path($this->getTemplatesDirectory().'/');
+            $views = $this->getTemplatesDirectory().'/';
 			if(isset($this->parserOptions['cache'])) {
 				$cache = $this->parserOptions['cache'];
 			} else {
 				throw new \RuntimeException('Cannot set the Blade cache directory');
 			}
-
             $this->parserInstance = new \Philo\Blade\Blade($views, $cache);
         }
 
