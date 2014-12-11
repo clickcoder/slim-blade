@@ -23,7 +23,7 @@
    },
    "require":{
       "slim/views":"0.1.*",
-      "philo/laravel-blade":"1.0"
+      "philo/laravel-blade":"2.*"
    },
    "autoload":{
       "psr-4":{
